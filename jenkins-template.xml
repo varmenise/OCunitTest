@@ -1,0 +1,108 @@
+
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <logRotator>
+    <daysToKeep>60</daysToKeep>
+    <numToKeep>-1</numToKeep>
+    <artifactDaysToKeep>-1</artifactDaysToKeep>
+    <artifactNumToKeep>20</artifactNumToKeep>
+  </logRotator>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <nectar.plugins.rbac.groups.JobProxyGroupContainer plugin="nectar-rbac@3.4">
+      <groups/>
+    </nectar.plugins.rbac.groups.JobProxyGroupContainer>
+    <com.cloudbees.jenkins.plugins.PublicKey plugin="cloudbees-public-key@1.1"/>
+    <com.cloudbees.plugins.deployer.DeployNowJobProperty plugin="cloudbees-deployer-plugin@4.2">
+      <oneClickDeploy>false</oneClickDeploy>
+      <hosts>
+        <com.cloudbees.plugins.deployer.impl.run.RunHostImpl>
+          <targets class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+            <c class="list"/>
+            <list reference="../c"/>
+          </targets>
+          <user>(jenkins)</user>
+          <account>${account}</account>
+        </com.cloudbees.plugins.deployer.impl.run.RunHostImpl>
+      </hosts>
+    </com.cloudbees.plugins.deployer.DeployNowJobProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <name></name>
+        <refspec></refspec>
+        <url>${repositoryUrl}</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>**</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <disableSubmodules>false</disableSubmodules>
+    <recursiveSubmodules>false</recursiveSubmodules>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <authorOrCommitter>false</authorOrCommitter>
+    <clean>false</clean>
+    <wipeOutWorkspace>false</wipeOutWorkspace>
+    <pruneBranches>false</pruneBranches>
+    <remotePoll>false</remotePoll>
+    <ignoreNotifyCommit>false</ignoreNotifyCommit>
+    <useShallowClone>false</useShallowClone>
+    <buildChooser class="hudson.plugins.git.util.DefaultBuildChooser"/>
+    <gitTool>Default</gitTool>
+    <submoduleCfg class="list"/>
+    <relativeTargetDir></relativeTargetDir>
+    <reference></reference>
+    <excludedRegions></excludedRegions>
+    <excludedUsers></excludedUsers>
+    <gitConfigName></gitConfigName>
+    <gitConfigEmail></gitConfigEmail>
+    <skipTag>false</skipTag>
+    <includedRegions></includedRegions>
+    <scmName></scmName>
+  </scm>
+  <assignedNode>xcode</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <jdk>(Default)</jdk>
+  <triggers class="vector"/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <au.com.rayh.XCodeBuilder plugin="xcode-plugin@1.3.1">
+      <cleanBeforeBuild>false</cleanBeforeBuild>
+      <cleanTestReports>false</cleanTestReports>
+      <configuration>Debug</configuration>
+      <target>ios-clickstartLogicTests</target>
+      <sdk>iphonesimulator</sdk>
+      <symRoot></symRoot>
+      <configurationBuildDir></configurationBuildDir>
+      <xcodeProjectPath></xcodeProjectPath>
+      <xcodeProjectFile></xcodeProjectFile>
+      <xcodebuildArguments>TEST_AFTER_BUILD=true</xcodebuildArguments>
+      <xcodeSchema></xcodeSchema>
+      <xcodeWorkspaceFile></xcodeWorkspaceFile>
+      <embeddedProfileFile></embeddedProfileFile>
+      <cfBundleVersionValue></cfBundleVersionValue>
+      <cfBundleShortVersionStringValue></cfBundleShortVersionStringValue>
+      <buildIpa>false</buildIpa>
+      <unlockKeychain>false</unlockKeychain>
+      <keychainPath>${HOME}/Library/Keychains/login.keychain</keychainPath>
+      <keychainPwd></keychainPwd>
+    </au.com.rayh.XCodeBuilder>
+  </builders>
+  <publishers>
+    <hudson.tasks.junit.JUnitResultArchiver>
+      <testResults>test-reports/*.xml   </testResults>
+      <keepLongStdio>false</keepLongStdio>
+      <testDataPublishers/>
+    </hudson.tasks.junit.JUnitResultArchiver>
+  </publishers>
+  <buildWrappers/>
+</project>

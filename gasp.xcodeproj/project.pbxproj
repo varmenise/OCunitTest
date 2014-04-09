@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E08ECFA16F2F92700700E55 /* CBNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0777016F2F897001F32E5 /* CBNetworkClient.m */; };
+		0E220C0116EDD281004AF57B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF3E74916E8603E002F2A96 /* SenTestingKit.framework */; };
+		0E220C0216EDD281004AF57B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF3E72216E8603E002F2A96 /* UIKit.framework */; };
+		0E220C0316EDD281004AF57B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF3E72416E8603E002F2A96 /* Foundation.framework */; };
+		0E220C0916EDD281004AF57B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E220C0716EDD281004AF57B /* InfoPlist.strings */; };
+		0E220C0C16EDD281004AF57B /* gaspLogicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E220C0B16EDD281004AF57B /* gaspLogicTests.m */; };
+		0E704D0216F15639007A8C3D /* CBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3E73216E8603E002F2A96 /* CBAppDelegate.m */; };
+		0E704D0416F15639007A8C3D /* CBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3E73B16E8603E002F2A96 /* CBViewController.m */; };
+		0EC0777116F2F897001F32E5 /* CBNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0777016F2F897001F32E5 /* CBNetworkClient.m */; };
+		0EF3E72316E8603E002F2A96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF3E72216E8603E002F2A96 /* UIKit.framework */; };
+		0EF3E72516E8603E002F2A96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF3E72416E8603E002F2A96 /* Foundation.framework */; };
+		0EF3E72716E8603E002F2A96 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF3E72616E8603E002F2A96 /* CoreGraphics.framework */; };
+		0EF3E72D16E8603E002F2A96 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0EF3E72B16E8603E002F2A96 /* InfoPlist.strings */; };
+		0EF3E72F16E8603E002F2A96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3E72E16E8603E002F2A96 /* main.m */; };
+		0EF3E73316E8603E002F2A96 /* CBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3E73216E8603E002F2A96 /* CBAppDelegate.m */; };
+		0EF3E73C16E8603E002F2A96 /* CBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3E73B16E8603E002F2A96 /* CBViewController.m */; };
+		0EF3E73F16E8603E002F2A96 /* CBViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EF3E73D16E8603E002F2A96 /* CBViewController_iPhone.xib */; };
+		0EF3E74216E8603E002F2A96 /* CBViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EF3E74016E8603E002F2A96 /* CBViewController_iPad.xib */; };
+		4F0CD3B817EBBC52000EF541 /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0CD3B417EBBC52000EF541 /* HockeySDK.framework */; };
+		4F0CD3B917EBBC52000EF541 /* HockeySDK.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4F0CD3B617EBBC52000EF541 /* HockeySDK.xcconfig */; };
+		4F0CD3BA17EBBC52000EF541 /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4F0CD3B717EBBC52000EF541 /* HockeySDKResources.bundle */; };
+		4F0CD3BC17EBBCE0000EF541 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0CD3BB17EBBCE0000EF541 /* CoreText.framework */; };
+		4F0CD3BE17EBBCF3000EF541 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0CD3BD17EBBCF3000EF541 /* QuartzCore.framework */; };
+		4F0CD3C017EBBCFF000EF541 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0CD3BF17EBBCFF000EF541 /* SystemConfiguration.framework */; };
+		4F0CD3C817EBE391000EF541 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0CD3C217EBE391000EF541 /* libTestFlight.a */; };
+		4F0CD3C917EBE391000EF541 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4F0CD3C317EBE391000EF541 /* README.md */; };
+		4F0CD3CA17EBE391000EF541 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 4F0CD3C417EBE391000EF541 /* release_notes.md */; };
+		4F0CD3CC17EBE413000EF541 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0CD3CB17EBE413000EF541 /* libz.dylib */; };
+		4F16787F17CBE91600BAD7A9 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F16787E17CBE91600BAD7A9 /* Icon.png */; };
+		4F16788117CBE91D00BAD7A9 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F16788017CBE91D00BAD7A9 /* Icon@2x.png */; };
+		4F16788317CBE93700BAD7A9 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F16788217CBE93700BAD7A9 /* Icon-72.png */; };
+		4F16788517CBE93D00BAD7A9 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F16788417CBE93D00BAD7A9 /* Icon-72@2x.png */; };
+		4F16788717CBEC3300BAD7A9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F16788617CBEC3300BAD7A9 /* Default-568h@2x.png */; };
+		4F1678B717CC30A100BAD7A9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F1678B617CC30A100BAD7A9 /* Default@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E704CFF16F15631007A8C3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EF3E71716E8603E002F2A96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EF3E71E16E8603E002F2A96;
+			remoteInfo = "gasp-clickstart";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E220C0016EDD281004AF57B /* gaspLogicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gaspLogicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E220C0616EDD281004AF57B /* gaspLogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "gaspLogicTests-Info.plist"; sourceTree = "<group>"; };
+		0E220C0816EDD281004AF57B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0E220C0A16EDD281004AF57B /* gaspLogicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gaspLogicTests.h; sourceTree = "<group>"; };
+		0E220C0B16EDD281004AF57B /* gaspLogicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gaspLogicTests.m; sourceTree = "<group>"; };
+		0E220C0D16EDD281004AF57B /* gaspLogicTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gaspLogicTests-Prefix.pch"; sourceTree = "<group>"; };
+		0EC0776F16F2F897001F32E5 /* CBNetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBNetworkClient.h; sourceTree = "<group>"; };
+		0EC0777016F2F897001F32E5 /* CBNetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBNetworkClient.m; sourceTree = "<group>"; };
+		0EF3E71F16E8603E002F2A96 /* gasp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gasp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EF3E72216E8603E002F2A96 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0EF3E72416E8603E002F2A96 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0EF3E72616E8603E002F2A96 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0EF3E72A16E8603E002F2A96 /* gasp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "gasp-Info.plist"; sourceTree = "<group>"; };
+		0EF3E72C16E8603E002F2A96 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0EF3E72E16E8603E002F2A96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0EF3E73016E8603E002F2A96 /* gasp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gasp-Prefix.pch"; sourceTree = "<group>"; };
+		0EF3E73116E8603E002F2A96 /* CBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBAppDelegate.h; sourceTree = "<group>"; };
+		0EF3E73216E8603E002F2A96 /* CBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBAppDelegate.m; sourceTree = "<group>"; };
+		0EF3E73A16E8603E002F2A96 /* CBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBViewController.h; sourceTree = "<group>"; };
+		0EF3E73B16E8603E002F2A96 /* CBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBViewController.m; sourceTree = "<group>"; };
+		0EF3E73E16E8603E002F2A96 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CBViewController_iPhone.xib; sourceTree = "<group>"; };
+		0EF3E74116E8603E002F2A96 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CBViewController_iPad.xib; sourceTree = "<group>"; };
+		0EF3E74916E8603E002F2A96 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		4F0CD3B417EBBC52000EF541 /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
+		4F0CD3B617EBBC52000EF541 /* HockeySDK.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = HockeySDK.xcconfig; sourceTree = "<group>"; };
+		4F0CD3B717EBBC52000EF541 /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
+		4F0CD3BB17EBBCE0000EF541 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		4F0CD3BD17EBBCF3000EF541 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4F0CD3BF17EBBCFF000EF541 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4F0CD3C217EBE391000EF541 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		4F0CD3C317EBE391000EF541 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		4F0CD3C417EBE391000EF541 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
+		4F0CD3C517EBE391000EF541 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		4F0CD3C617EBE391000EF541 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
+		4F0CD3C717EBE391000EF541 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		4F0CD3CB17EBE413000EF541 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		4F16787E17CBE91600BAD7A9 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		4F16788017CBE91D00BAD7A9 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		4F16788217CBE93700BAD7A9 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		4F16788417CBE93D00BAD7A9 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		4F16788617CBEC3300BAD7A9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4F1678B617CC30A100BAD7A9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E220BFC16EDD281004AF57B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E220C0116EDD281004AF57B /* SenTestingKit.framework in Frameworks */,
+				0E220C0216EDD281004AF57B /* UIKit.framework in Frameworks */,
+				0E220C0316EDD281004AF57B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF3E71C16E8603E002F2A96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F0CD3CC17EBE413000EF541 /* libz.dylib in Frameworks */,
+				4F0CD3C017EBBCFF000EF541 /* SystemConfiguration.framework in Frameworks */,
+				4F0CD3BE17EBBCF3000EF541 /* QuartzCore.framework in Frameworks */,
+				4F0CD3BC17EBBCE0000EF541 /* CoreText.framework in Frameworks */,
+				4F0CD3B817EBBC52000EF541 /* HockeySDK.framework in Frameworks */,
+				4F0CD3C817EBE391000EF541 /* libTestFlight.a in Frameworks */,
+				0EF3E72316E8603E002F2A96 /* UIKit.framework in Frameworks */,
+				0EF3E72516E8603E002F2A96 /* Foundation.framework in Frameworks */,
+				0EF3E72716E8603E002F2A96 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E220C0416EDD281004AF57B /* gasp-clickstartLogicTests */ = {
+			isa = PBXGroup;
+			children = (
+				0E220C0A16EDD281004AF57B /* gaspLogicTests.h */,
+				0E220C0B16EDD281004AF57B /* gaspLogicTests.m */,
+				0E220C0516EDD281004AF57B /* Supporting Files */,
+			);
+			path = "gasp-clickstartLogicTests";
+			sourceTree = SOURCE_ROOT;
+		};
+		0E220C0516EDD281004AF57B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E220C0616EDD281004AF57B /* gaspLogicTests-Info.plist */,
+				0E220C0716EDD281004AF57B /* InfoPlist.strings */,
+				0E220C0D16EDD281004AF57B /* gaspLogicTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0EF3E71616E8603E002F2A96 = {
+			isa = PBXGroup;
+			children = (
+				0EF3E72816E8603E002F2A96 /* gasp-clickstart */,
+				0E220C0416EDD281004AF57B /* gasp-clickstartLogicTests */,
+				4F0CD3CD17EBE9C2000EF541 /* Icons */,
+				4F0CD3C117EBE391000EF541 /* TestFlightSDK_iOS */,
+				4F0CD3B317EBBC52000EF541 /* HockeySDK.embeddedframework */,
+				0EF3E72116E8603E002F2A96 /* Frameworks */,
+				0EF3E72016E8603E002F2A96 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0EF3E72016E8603E002F2A96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0EF3E71F16E8603E002F2A96 /* gasp.app */,
+				0E220C0016EDD281004AF57B /* gaspLogicTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0EF3E72116E8603E002F2A96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F0CD3CB17EBE413000EF541 /* libz.dylib */,
+				4F0CD3BF17EBBCFF000EF541 /* SystemConfiguration.framework */,
+				4F0CD3BD17EBBCF3000EF541 /* QuartzCore.framework */,
+				4F0CD3BB17EBBCE0000EF541 /* CoreText.framework */,
+				0EF3E72216E8603E002F2A96 /* UIKit.framework */,
+				0EF3E72416E8603E002F2A96 /* Foundation.framework */,
+				0EF3E72616E8603E002F2A96 /* CoreGraphics.framework */,
+				0EF3E74916E8603E002F2A96 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0EF3E72816E8603E002F2A96 /* gasp-clickstart */ = {
+			isa = PBXGroup;
+			children = (
+				0EF3E73116E8603E002F2A96 /* CBAppDelegate.h */,
+				0EF3E73216E8603E002F2A96 /* CBAppDelegate.m */,
+				0EF3E73A16E8603E002F2A96 /* CBViewController.h */,
+				0EF3E73B16E8603E002F2A96 /* CBViewController.m */,
+				0EF3E74016E8603E002F2A96 /* CBViewController_iPad.xib */,
+				0EF3E73D16E8603E002F2A96 /* CBViewController_iPhone.xib */,
+				0EC0776F16F2F897001F32E5 /* CBNetworkClient.h */,
+				0EC0777016F2F897001F32E5 /* CBNetworkClient.m */,
+				0EF3E72916E8603E002F2A96 /* Supporting Files */,
+			);
+			path = "gasp-clickstart";
+			sourceTree = "<group>";
+		};
+		0EF3E72916E8603E002F2A96 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0EF3E72A16E8603E002F2A96 /* gasp-Info.plist */,
+				0EF3E72B16E8603E002F2A96 /* InfoPlist.strings */,
+				0EF3E72E16E8603E002F2A96 /* main.m */,
+				0EF3E73016E8603E002F2A96 /* gasp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F0CD3B317EBBC52000EF541 /* HockeySDK.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				4F0CD3B417EBBC52000EF541 /* HockeySDK.framework */,
+				4F0CD3B517EBBC52000EF541 /* Resources */,
+			);
+			path = HockeySDK.embeddedframework;
+			sourceTree = "<group>";
+		};
+		4F0CD3B517EBBC52000EF541 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F0CD3B617EBBC52000EF541 /* HockeySDK.xcconfig */,
+				4F0CD3B717EBBC52000EF541 /* HockeySDKResources.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4F0CD3C117EBE391000EF541 /* TestFlightSDK_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4F0CD3C217EBE391000EF541 /* libTestFlight.a */,
+				4F0CD3C317EBE391000EF541 /* README.md */,
+				4F0CD3C417EBE391000EF541 /* release_notes.md */,
+				4F0CD3C517EBE391000EF541 /* TestFlight+AsyncLogging.h */,
+				4F0CD3C617EBE391000EF541 /* TestFlight+ManualSessions.h */,
+				4F0CD3C717EBE391000EF541 /* TestFlight.h */,
+			);
+			path = TestFlightSDK_iOS;
+			sourceTree = "<group>";
+		};
+		4F0CD3CD17EBE9C2000EF541 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				4F1678B617CC30A100BAD7A9 /* Default@2x.png */,
+				4F16788617CBEC3300BAD7A9 /* Default-568h@2x.png */,
+				4F16788417CBE93D00BAD7A9 /* Icon-72@2x.png */,
+				4F16788217CBE93700BAD7A9 /* Icon-72.png */,
+				4F16788017CBE91D00BAD7A9 /* Icon@2x.png */,
+				4F16787E17CBE91600BAD7A9 /* Icon.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E220BFF16EDD281004AF57B /* gaspLogicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E220C1016EDD281004AF57B /* Build configuration list for PBXNativeTarget "gaspLogicTests" */;
+			buildPhases = (
+				0E220BFB16EDD281004AF57B /* Sources */,
+				0E220BFC16EDD281004AF57B /* Frameworks */,
+				0E220BFD16EDD281004AF57B /* Resources */,
+				0E220BFE16EDD281004AF57B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E704D0016F15631007A8C3D /* PBXTargetDependency */,
+			);
+			name = gaspLogicTests;
+			productName = "gasp-clickstartLogicTests";
+			productReference = 0E220C0016EDD281004AF57B /* gaspLogicTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		0EF3E71E16E8603E002F2A96 /* gasp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EF3E75A16E8603E002F2A96 /* Build configuration list for PBXNativeTarget "gasp" */;
+			buildPhases = (
+				0EF3E71B16E8603E002F2A96 /* Sources */,
+				0EF3E71C16E8603E002F2A96 /* Frameworks */,
+				0EF3E71D16E8603E002F2A96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gasp;
+			productName = "gasp-clickstart";
+			productReference = 0EF3E71F16E8603E002F2A96 /* gasp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0EF3E71716E8603E002F2A96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = cloudbees;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Michael Neale";
+				TargetAttributes = {
+					0EF3E71E16E8603E002F2A96 = {
+						DevelopmentTeam = 2525NH3G3Y;
+					};
+				};
+			};
+			buildConfigurationList = 0EF3E71A16E8603E002F2A96 /* Build configuration list for PBXProject "gasp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0EF3E71616E8603E002F2A96;
+			productRefGroup = 0EF3E72016E8603E002F2A96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0EF3E71E16E8603E002F2A96 /* gasp */,
+				0E220BFF16EDD281004AF57B /* gaspLogicTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E220BFD16EDD281004AF57B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E220C0916EDD281004AF57B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF3E71D16E8603E002F2A96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF3E72D16E8603E002F2A96 /* InfoPlist.strings in Resources */,
+				0EF3E73F16E8603E002F2A96 /* CBViewController_iPhone.xib in Resources */,
+				0EF3E74216E8603E002F2A96 /* CBViewController_iPad.xib in Resources */,
+				4F16787F17CBE91600BAD7A9 /* Icon.png in Resources */,
+				4F16788117CBE91D00BAD7A9 /* Icon@2x.png in Resources */,
+				4F16788317CBE93700BAD7A9 /* Icon-72.png in Resources */,
+				4F0CD3C917EBE391000EF541 /* README.md in Resources */,
+				4F0CD3B917EBBC52000EF541 /* HockeySDK.xcconfig in Resources */,
+				4F0CD3BA17EBBC52000EF541 /* HockeySDKResources.bundle in Resources */,
+				4F16788517CBE93D00BAD7A9 /* Icon-72@2x.png in Resources */,
+				4F16788717CBEC3300BAD7A9 /* Default-568h@2x.png in Resources */,
+				4F0CD3CA17EBE391000EF541 /* release_notes.md in Resources */,
+				4F1678B717CC30A100BAD7A9 /* Default@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E220BFE16EDD281004AF57B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\nif [ \"$RUN_UNIT_TEST_WITH_IOS_SIM\" = \"YES\" ]; then\ntest_bundle_path=\"$BUILT_PRODUCTS_DIR/$PRODUCT_NAME.$WRAPPER_EXTENSION\"\nios-sim launch \"$(dirname \"$TEST_HOST\")\" --setenv DYLD_INSERT_LIBRARIES=/../../Library/PrivateFrameworks/IDEBundleInjection.framework/IDEBundleInjection --setenv XCInjectBundle=\"$test_bundle_path\" --setenv XCInjectBundleInto=\"$TEST_HOST\" --args -SenTest All \"$test_bundle_path\"\necho \"Finished running tests with ios-sim\"\nelse\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E220BFB16EDD281004AF57B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E08ECFA16F2F92700700E55 /* CBNetworkClient.m in Sources */,
+				0E704D0216F15639007A8C3D /* CBAppDelegate.m in Sources */,
+				0E704D0416F15639007A8C3D /* CBViewController.m in Sources */,
+				0E220C0C16EDD281004AF57B /* gaspLogicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF3E71B16E8603E002F2A96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF3E72F16E8603E002F2A96 /* main.m in Sources */,
+				0EF3E73316E8603E002F2A96 /* CBAppDelegate.m in Sources */,
+				0EF3E73C16E8603E002F2A96 /* CBViewController.m in Sources */,
+				0EC0777116F2F897001F32E5 /* CBNetworkClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E704D0016F15631007A8C3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EF3E71E16E8603E002F2A96 /* gasp */;
+			targetProxy = 0E704CFF16F15631007A8C3D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0E220C0716EDD281004AF57B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E220C0816EDD281004AF57B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0EF3E72B16E8603E002F2A96 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EF3E72C16E8603E002F2A96 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0EF3E73D16E8603E002F2A96 /* CBViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EF3E73E16E8603E002F2A96 /* en */,
+			);
+			name = CBViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		0EF3E74016E8603E002F2A96 /* CBViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EF3E74116E8603E002F2A96 /* en */,
+			);
+			name = CBViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0E220C0E16EDD281004AF57B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gasp-clickstartLogicTests/gaspLogicTests-Prefix.pch";
+				INFOPLIST_FILE = "gasp-clickstartLogicTests/gaspLogicTests-Info.plist";
+				PRODUCT_NAME = gaspLogicTests;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0E220C0F16EDD281004AF57B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gasp-clickstartLogicTests/gaspLogicTests-Prefix.pch";
+				INFOPLIST_FILE = "gasp-clickstartLogicTests/gaspLogicTests-Info.plist";
+				PRODUCT_NAME = gaspLogicTests;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		0EF3E75816E8603E002F2A96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mark Prichard (FN5BB466GN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "60FAFEE7-CE27-48AC-A457-B766B6FFCA15";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0EF3E75916E8603E002F2A96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mark Prichard (FN5BB466GN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "60FAFEE7-CE27-48AC-A457-B766B6FFCA15";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0EF3E75B16E8603E002F2A96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/markprichard/projects/gasp/gasp-ios/HockeySDK.embeddedframework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gasp-clickstart/gasp-Prefix.pch";
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/gasp-clickstart/gasp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/markprichard/projects/gasp/gasp-ios/TestFlightSDK_iOS",
+				);
+				PRODUCT_NAME = gasp;
+				PROVISIONING_PROFILE = "";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0EF3E75C16E8603E002F2A96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/markprichard/projects/gasp/gasp-ios/HockeySDK.embeddedframework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gasp-clickstart/gasp-Prefix.pch";
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/gasp-clickstart/gasp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/markprichard/projects/gasp/gasp-ios/TestFlightSDK_iOS",
+				);
+				PRODUCT_NAME = gasp;
+				PROVISIONING_PROFILE = "";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E220C1016EDD281004AF57B /* Build configuration list for PBXNativeTarget "gaspLogicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E220C0E16EDD281004AF57B /* Debug */,
+				0E220C0F16EDD281004AF57B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EF3E71A16E8603E002F2A96 /* Build configuration list for PBXProject "gasp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EF3E75816E8603E002F2A96 /* Debug */,
+				0EF3E75916E8603E002F2A96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EF3E75A16E8603E002F2A96 /* Build configuration list for PBXNativeTarget "gasp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EF3E75B16E8603E002F2A96 /* Debug */,
+				0EF3E75C16E8603E002F2A96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0EF3E71716E8603E002F2A96 /* Project object */;
+}

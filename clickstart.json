@@ -1,0 +1,34 @@
+{
+    "id": "ios-clickstart",
+    "name": "iOS app with CouchDB based backend service",   
+    "description": "iOS starter app showing how CI works with iOS on CloudBees - as a starting point",
+    "source": "github",
+    "icon" : "https://d3ko533tu1ozfq.cloudfront.net/clickstart/sencha_icon.png",
+    "app-package" : "https://s3.amazonaws.com/cloudbees-downloads/clickstart/ios-clickstart-server.zip",
+    "app-package-type" : "zip",
+
+    "runtime": {
+        "type": "play2",
+        "app-variables" : { 
+            "couchdb_name" : "$RANDOM_VALUE"
+        }
+    },
+
+    "build-with-jenkins": {
+      "plugins" : ["xcode-plugin"],
+      "template": {
+              "type": "https://raw.github.com/michaelneale/ios-clickstart/master/jenkins-template.xml",
+              "options": {
+              }            
+          }
+    },
+
+    "services" : [
+     {
+      "name" : "cloudant",
+      "plan" : "oxygen",
+      "settings" : {}
+     }     
+     ]
+
+}
